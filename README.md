@@ -58,4 +58,7 @@ Aplicación Android desarrollada en **Kotlin** que utiliza **Mapbox** para ofrec
 - Conexión a internet para la carga de mapas.
 - **Token de acceso de Mapbox**  
   Agrega tu token personal en el archivo `res/values/strings.xml`:
-
+  
+## 👨‍💻 Desarrollado por
+Himer Jerly Cóndor Luna
+📧 himer.condor@gmail.com
