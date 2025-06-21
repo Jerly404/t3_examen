@@ -1,0 +1,20 @@
+<resources>
+    <style name="CyberpunkButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bg_cyber_button</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:padding">12dp</item>
+    </style>
+    <style name="CyberpunkEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:background">@drawable/bg_cyber_edittext</item>
+        <item name="android:textColor">#E1B7FF</item>
+        <item name="android:textColorHint">#9C27B0</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+</resources>

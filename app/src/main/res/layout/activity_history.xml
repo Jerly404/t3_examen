@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0A0A0A"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/historial_de_lugares"
+        android:textColor="#D600FF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="16dp" />
+
+    <ListView
+        android:id="@+id/listHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#D600FF"
+        android:dividerHeight="2dp"
+        android:background="#EEEEEE"
+        android:padding="8dp"
+        android:cacheColorHint="#000000" />
+</LinearLayout>

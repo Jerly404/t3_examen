@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#0A0A0A"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Mapa a pantalla completa -->
+    <com.mapbox.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Botones flotantes uno debajo del otro -->
+    <LinearLayout
+        android:id="@+id/verticalControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/rounded_background">
+
+        <Button
+            android:id="@+id/btnDistancia"
+            style="@style/CyberpunkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_distance"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnArea"
+            style="@style/CyberpunkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_area"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/CyberpunkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/limpiar_todo"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnHistorial"
+            style="@style/CyberpunkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/historial" />
+    </LinearLayout>
+</FrameLayout>

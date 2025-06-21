@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">T3 Examen</string>
+
+    <!-- Token de Mapbox -->
+    <string name="mapbox_access_token" translatable="false" tools:ignore="UnusedResources">
+        pk.eyJ1IjoiaGltZXJqZXJseSIsImEiOiJjbWM1dGEzOTkwc3FjMmxvcGQxZzh6aWU5In0.ds4WoqsOy0VbfYE9Th1PHg
+    </string>
+
+    <!-- Botones -->
+    <string name="add_marker">Añadir marcador</string>
+    <string name="calculate_distance">Distancia</string>
+    <string name="calculate_area">Área</string>
+
+    <!-- Mensajes -->
+    <string name="error_min_distance">Se necesitan al menos 2 marcadores para calcular la distancia.</string>
+    <string name="result_distance">Distancia total: %.2f km</string>
+    <string name="error_min_area">Se necesitan al menos 3 marcadores para calcular el área.</string>
+    <string name="result_area">Área aproximada: %.2f km²</string>
+    <string name="nombre">Nombre</string>
+    <string name="fecha_yyyy_mm_dd">Fecha (YYYY-MM-DD)</string>
+    <string name="nota">Nota</string>
+    <string name="limpiar_todo">Limpiar todo</string>
+    <string name="historial">Historial</string>
+    <string name="historial_de_lugares">Historial de Lugares</string>
+</resources>

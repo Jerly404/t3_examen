@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etName"
+        style="@style/CyberpunkEditText"
+        android:hint="@string/nombre" />
+
+    <EditText
+        android:id="@+id/etDate"
+        style="@style/CyberpunkEditText"
+        android:hint="@string/fecha_yyyy_mm_dd" />
+
+    <EditText
+        android:id="@+id/etNote"
+        style="@style/CyberpunkEditText"
+        android:hint="@string/nota" />
+</LinearLayout>
