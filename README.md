@@ -34,7 +34,7 @@ Aplicación Android desarrollada en **Kotlin** que utiliza **Mapbox** para ofrec
 
 ## 📸 Capturas de Pantalla
 
-| Mapa con Marcadores | Distancia Calculada | Área Delimitada |
+| Mapa | History | Distancia |
 |---------------------|---------------------|------------------|
 | ![Mapa](screenshots/mapa.png) | ![Distancia](screenshots/history.png) | ![Área](screenshots/distancia.png) |
 
