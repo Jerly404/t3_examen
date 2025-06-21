@@ -1,5 +1,8 @@
 package com.hcondor.t3_examen.ui.maps
 
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import androidx.core.content.ContextCompat
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -25,7 +28,6 @@ import com.mapbox.maps.extension.style.layers.generated.FillLayer
 import com.mapbox.maps.extension.style.layers.generated.LineLayer
 import com.mapbox.maps.extension.style.layers.properties.generated.LineCap
 import com.mapbox.maps.extension.style.layers.properties.generated.LineJoin
-import com.mapbox.maps.extension.style.layers.properties.generated.Visibility
 import com.mapbox.maps.extension.style.sources.addSource
 import com.mapbox.maps.extension.style.sources.generated.GeoJsonSource
 import com.mapbox.maps.plugin.annotation.annotations
@@ -194,19 +196,28 @@ class MapsActivity : AppCompatActivity() {
 
     private fun addMarkerToMap(place: PlaceEntity) {
         val point = Point.fromLngLat(place.longitude, place.latitude)
-        val icon = BitmapFactory.decodeResource(resources, R.drawable.marker_cyberpunk)
+        val drawable = ContextCompat.getDrawable(this, R.drawable.ic_marker)
+
+        val icon = drawable?.let {
+            val bitmap = Bitmap.createBitmap(it.intrinsicWidth, it.intrinsicHeight, Bitmap.Config.ARGB_8888)
+            val canvas = Canvas(bitmap)
+            it.setBounds(0, 0, canvas.width, canvas.height)
+            it.draw(canvas)
+            bitmap
+        } ?: return
 
         val markerOptions = PointAnnotationOptions()
             .withPoint(point)
             .withIconImage(icon)
-            .withIconSize(0.030) // 🔸 Tamaño visual aprox. 32px si la imagen es de 128px
+            .withIconSize(0.4)
             .withTextField(place.name)
             .withTextColor("#39FF14")
-            .withTextSize(14.0)
+            .withTextSize(32.0)
 
         pointAnnotationManager.create(markerOptions)
         drawRedLineBetweenMarkers()
     }
+
 
     private fun drawRedLineBetweenMarkers() {
         removeDrawnLines()
@@ -236,7 +247,7 @@ class MapsActivity : AppCompatActivity() {
                 style.addSource(polygonSource)
 
                 val fillLayer = FillLayer("polygon-layer", "polygon-source")
-                    .fillColor(Expression.rgba(255.0, 0.0, 0.0, 0.5)) // rojo con 50% opacidad
+                    .fillColor(Expression.rgba(255.0, 0.0, 0.0, 0.5))
                 style.addLayer(fillLayer)
             }
         }
