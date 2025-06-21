@@ -1,48 +1,61 @@
-# 📍 T3 Examen - App de Mapas Interactivos con Kotlin y Mapbox
+# 📍 T3 Examen – Aplicación de Mapas Interactivos con Kotlin y Mapbox
 
-Aplicación Android desarrollada en Kotlin que integra Mapbox para ofrecer una experiencia de mapas interactivos con marcadores personalizados, cálculo de distancias, áreas, y almacenamiento persistente usando Room. Este proyecto fue desarrollado como parte del curso de Desarrollo de Aplicaciones Móviles - Semana 13.
+Aplicación Android desarrollada en **Kotlin** que utiliza **Mapbox** para ofrecer una experiencia de mapas interactivos con marcadores personalizados, cálculo de distancias y áreas, además de almacenamiento local mediante **Room**. Este proyecto fue elaborado como parte del curso de **Desarrollo de Aplicaciones Móviles – Semana 13**.
 
 ---
 
 ## ✨ Funcionalidades Principales
 
-- 🗺️ Mapa interactivo con zoom, desplazamiento y rotación.
-- 📍 Agregado de marcadores personalizados con nombre, fecha y nota.
-- 📏 Cálculo de distancia total entre los marcadores (medido en metros y kilómetros).
-- 🔺 Cálculo del área delimitada por 3 o más marcadores (usando polígono).
-- 💾 Guardado local de marcadores en base de datos Room.
-- 🕓 Historial de ubicaciones registradas.
-- 🧽 Botón para mover los marcadores actuales al historial y limpiar el mapa.
-- 🖼️ Diseño visual estilo *Cyberpunk*.
+- 🗺️ **Mapa Interactivo**  
+  Soporte para zoom, desplazamiento y rotación en tiempo real.
+
+- 📍 **Marcadores Personalizados**  
+  Permite agregar marcadores con nombre, fecha y notas descriptivas.
+
+- 📏 **Cálculo de Distancias**  
+  Calcula la distancia total entre los puntos seleccionados, mostrando el resultado en metros y kilómetros.
+
+- 🔺 **Cálculo de Áreas**  
+  Permite delimitar un área usando 3 o más puntos, mostrando el área en m² o km² utilizando polígonos.
+
+- 💾 **Almacenamiento Local**  
+  Guarda los marcadores de forma persistente usando Room.
+
+- 🕓 **Historial de Ubicaciones**  
+  Lista de marcadores registrados previamente, con opción para consultar y reutilizar.
+
+- 🧽 **Limpieza y Respaldo**  
+  Funcionalidad para mover los marcadores actuales al historial y limpiar el mapa.
+
+- 🖼️ **Diseño Cyberpunk**  
+  Interfaz visual moderna inspirada en el estilo *Cyberpunk* con colores vibrantes y oscuros.
 
 ---
 
-## 📱 Capturas de Pantalla
+## 📸 Capturas de Pantalla
 
-| Mapa con marcadores | Distancia entre puntos | Área delimitada |
-|---------------------|------------------------|------------------|
-| ![mapa](screenshots/mapa.png) | ![distancia](screenshots/distancia.png) | ![area](screenshots/area.png) |
-
-> 📁 Las capturas deben ir en una carpeta `screenshots/` dentro del repositorio.
+| Mapa con Marcadores | Distancia Calculada | Área Delimitada |
+|---------------------|---------------------|------------------|
+| ![Mapa](screenshots/mapa.png) | ![Distancia](screenshots/history.png) | ![Área](screenshots/area.png) |
 
 ---
 
-## 🛠️ Tecnologías Usadas
+## 🛠️ Tecnologías y Herramientas
 
-- **Kotlin** - Lenguaje principal.
-- **Mapbox v10+** - Motor de mapas.
-- **Room** - Base de datos local persistente.
-- **Coroutines** - Para operaciones asincrónicas.
-- **ViewBinding** - Para manejo de vistas.
-- **Material Design** - Para los componentes visuales.
+- **Kotlin** – Lenguaje de desarrollo principal.
+- **Mapbox SDK v10+** – Visualización de mapas y gestión de ubicaciones.
+- **Room (Jetpack)** – Persistencia local de datos.
+- **Coroutines** – Manejo eficiente de tareas asincrónicas.
+- **ViewBinding** – Acceso seguro a vistas XML sin `findViewById`.
+- **Material Design** – Componentes visuales modernos y accesibles.
 
 ---
 
-## ⚙️ Requisitos del Proyecto
+## ⚙️ Requisitos para Ejecutar el Proyecto
 
-- Android Studio Electric Eel o superior.
-- Android SDK 24+
-- Conexión a internet para cargar mapas.
-- Token de acceso de Mapbox (añadir en `res/values/strings.xml`):
-
+- Android Studio **Electric Eel** o superior.
+- Android SDK **24 o superior**.
+- Conexión a internet para la carga de mapas.
+- **Token de acceso de Mapbox**  
+  Agrega tu token personal en el archivo `res/values/strings.xml`:
 
