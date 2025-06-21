@@ -36,7 +36,7 @@ Aplicación Android desarrollada en **Kotlin** que utiliza **Mapbox** para ofrec
 
 | Mapa con Marcadores | Distancia Calculada | Área Delimitada |
 |---------------------|---------------------|------------------|
-| ![Mapa](screenshots/mapa.png) | ![Distancia](screenshots/history.png) | ![Área](screenshots/area.png) |
+| ![Mapa](screenshots/mapa.png) | ![Distancia](screenshots/history.png) | ![Área](screenshots/distancia.png) |
 
 ---
 
